@@ -12,7 +12,7 @@ import { g, auth, config } from "@grafbase/sdk";
 // Define Data Models
 // https://grafbase.com/docs/database
 
-const User = g.model("user", {
+const User = g.model("User", {
   name: g.string().length({ min: 2, max: 20 }),
   email: g.string().unique(),
   avatarUrl: g.url(),
